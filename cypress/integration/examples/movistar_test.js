@@ -24,22 +24,18 @@ describe("tests Movstar", function(){
         cy.get('li > .btn-group > .btn-filter > [data-label-placement=""] > .icon').click();
         let memoria256 = cy.get(':nth-child(3) > .filter-group > .filter-data-section > :nth-child(2) > a > .filter-info-label');
         memoria256.click();
-        let contador=0;
-        let containerCelulares = cy.get('.item.last').each((celular)=>{
-            contador++
-        });
-        cy.log("Elementos encontrados",contador)
-        //let arrayCelulares = Object.entries(containerCelulares);
-       // cy.log("Elementos encontrados", arrayCelulares.length);    
+        let containerCelulares = cy.get('.item.last')
+        let arrayCelulares = Object.entries(containerCelulares); 
+        cy.log("Elementos encontrados", arrayCelulares.length); 
     });
 
     it('CP003-Validar cuotas en compra de equipo -Cuotas.60 -Equipo.Tercero de la lista -Banco.Credicoop -Tarjeta.Visa', function(){
         //primer paramentro banco, segundo parametro tarjeta, tercer parametro cantidad de cuotas
       movistarCuotas.filtrarCuotas('Credicoop','Visa','60');
      });
-    
+
     it('CP004: Agregar producto al Carrito de compras chequear que se agregue y luego eliminarlo y comprobar si el carrito esta vacio', function(){
-        movistarCart.addToCart('A31');
+        movistarCart.addToCart('A02s');
         movistarCart.delToCart();
         movistarCart.CheckEmptyCart();
     });

@@ -9,6 +9,7 @@
   "author": "Taula",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^6.4.0"
+    "cypress": "^6.5.0",
+    "cypress-image-snapshot": "^4.0.1"
   }
 }
