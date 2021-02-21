@@ -1,0 +1,8 @@
+{
+    "iconSearch" : ".waves-effect > .icon-search",
+    "inputSearch" : "#myInput",
+    "buyPhone" : ".button > :nth-child(1) > span",
+    "buyPhone2" : ".pdp-buttons-wrapper > #movistar-pdp-addtocart-button",
+    "checkPhone" : ".first.last.odd",
+    "delPhoneCart" : "#movistar-remove-product-link"
+}

@@ -1,0 +1,7 @@
+{
+    "phoneList":".item.last",
+    "options":"#open-modal-installments",
+    "selectBank":"#selectBank",
+    "selectCard":"#selectCardByBank",
+    "table":"#bodyTable"
+}
