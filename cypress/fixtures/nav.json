@@ -1,0 +1,5 @@
+{
+    "header": "#navigation",
+    "nav": ".dnavigation",
+    "burger": ".navigation__toogle-container > .navigation__toogle > :nth-child(3)"
+}

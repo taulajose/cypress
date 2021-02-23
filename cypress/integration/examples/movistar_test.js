@@ -1,6 +1,7 @@
 import movistarCart from '../../support/pages/movistarCart'
 import movistarMarcas from '../../support/pages/movistarMarcas'
 import movistarCuotas from '../../support/pages/movistarCuotas'
+import movistarNav from '../../support/pages/movistarNav';
 
 describe("tests Movstar", function(){
 
@@ -45,6 +46,16 @@ describe("tests Movstar", function(){
     //por parametro se le puede pasar LG, Motorola, Samsung, Nokia, Alcatel, Apple y entra en cada categoria y recorre todos los equipos de la lista
     //para chequear que todos correspondan con dicha marca y que no se haya filtrado alguno de otra marca. 
         movistarMarcas.filtrarMarcas('Nokia')
+    });
+
+    it('Probar menu nav en diferentes tamaños de pantalla', function(){
+        movistarNav.chekBySize(1024,768);
+        movistarNav.chekBySize(800,600);
+        movistarNav.chekByDevice('iphone-6+','landscape');
+        movistarNav.chekByDevice('iphone-6+','portrait');
+        movistarNav.chekByDevice('iphone-4', 'portrait');
+        movistarNav.chekByDevice('iphone-4','landscape');
+        movistarNav.chekByDevice('ipad-mini');
     });
 
 });
