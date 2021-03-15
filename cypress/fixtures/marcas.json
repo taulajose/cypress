@@ -1,9 +1,9 @@
 {
-    "lg": ":nth-child(1) > .footer-large__url > h3",
-    "motorola": ":nth-child(2) > .footer-large__url > h3",
-    "nokia": ":nth-child(3) > .footer-large__url > h3",
-    "samsung": ":nth-child(4) > .footer-large__url > h3",
-    "alcatel": ":nth-child(5) > .footer-large__url > h3",
-    "apple":":nth-child(6) > .footer-large__url > h3",
+    "LG": ":nth-child(1) > .footer-large__url > h3",
+    "Motorola": ":nth-child(2) > .footer-large__url > h3",
+    "Nokia": ":nth-child(3) > .footer-large__url > h3",
+    "Samsung": ":nth-child(4) > .footer-large__url > h3",
+    "Alcatel": ":nth-child(5) > .footer-large__url > h3",
+    "Apple":":nth-child(6) > .footer-large__url > h3",
     "etiquetas":".product-brand > a"
 }

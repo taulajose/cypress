@@ -3,7 +3,7 @@ import movistarMarcas from '../../support/pages/movistarMarcas'
 import movistarCuotas from '../../support/pages/movistarCuotas'
 import movistarNav from '../../support/pages/movistarNav';
 
-describe("tests Movstar", function(){
+describe("tests Movistar", function(){
 
     beforeEach(function(){
         cy.visit("https://tienda.movistar.com.ar");
@@ -25,7 +25,7 @@ describe("tests Movstar", function(){
         cy.get('li > .btn-group > .btn-filter > [data-label-placement=""] > .icon').click();
         let memoria256 = cy.get(':nth-child(3) > .filter-group > .filter-data-section > :nth-child(2) > a > .filter-info-label');
         memoria256.click();
-        let containerCelulares = cy.get('.item.last')
+        let containerCelulares = cy.get('.filter-info.f-active')
         let arrayCelulares = Object.entries(containerCelulares); 
         cy.log("Elementos encontrados", arrayCelulares.length); 
     });
@@ -49,6 +49,7 @@ describe("tests Movstar", function(){
     });
 
     it('Probar menu nav en diferentes tamaños de pantalla', function(){
+        //320x569, 360x640, 480x854,1024x640, 1366x768, 1920x1080, ipad-2
         movistarNav.chekBySize(1024,768);
         movistarNav.chekBySize(800,600);
         movistarNav.chekByDevice('iphone-6+','landscape');

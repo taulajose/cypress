@@ -7,11 +7,9 @@ class verificarCuotas{
           cy.get(cuota.selectCard).select(tarjeta);
           cy.get(cuota.table).each((cell)=>{
             cy.wrap(cell).should('not.have.text',cuotas)
-        })
-        //table.sh
-        })
-    }
-
-}
+            });
+        });
+    };
+};
 
 export default new verificarCuotas();
